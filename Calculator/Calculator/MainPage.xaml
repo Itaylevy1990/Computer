@@ -8,8 +8,37 @@
     mc:Ignorable="d"
     Background="Gold">
 
-    <Grid Background="Cyan" Margin="20" CornerRadius="30">
-        <Grid Background="Red" Margin="50" CornerRadius="50"></Grid>
+    <Grid Background="Cyan" Margin="20" CornerRadius="50">
+        <Grid Background="Red" Margin="50" CornerRadius="100">
+        <TextBlock Text="Itay's Calculator" FontSize="70" FontWeight="Bold" TextAlignment="Center"></TextBlock>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+
+            </Grid.ColumnDefinitions>
+        </Grid>
         
     </Grid>
 </Page>
