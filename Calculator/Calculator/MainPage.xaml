@@ -6,39 +6,70 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="Gold">
+    >
+    <Grid Background="Gray" Margin="50" CornerRadius="100">
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
 
-    <Grid Background="Cyan" Margin="20" CornerRadius="50">
-        <Grid Background="Red" Margin="50" CornerRadius="100">
-        <TextBlock Text="Itay's Calculator" FontSize="70" FontWeight="Bold" TextAlignment="Center"></TextBlock>
-            <Grid.RowDefinitions>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-
-            </Grid.ColumnDefinitions>
+        </Grid.ColumnDefinitions>
+        <TextBlock Text="Itay's Calculator" FontSize="70" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" Grid.Column="0" Grid.ColumnSpan="19" Grid.Row="0" Grid.RowSpan="2" SelectionChanged="TextBlock_SelectionChanged"></TextBlock>
+        <Button Content="1" Name="Button1" Grid.Row="2" Grid.Column="0" Grid.RowSpan="3" Grid.ColumnSpan="3" Click="Button_Click" FontSize="50" Width="180" Height="140" Background="Black" Foreground="White" CornerRadius="16" Margin="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Button Content="2" Name="Button2" Grid.Row="2" Grid.Column="3" Grid.RowSpan="3" Grid.ColumnSpan="3" Click="Button_Click" FontSize="50" Width="180" Height="140" Background="Black" Foreground="White" CornerRadius="16" Margin="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Button Content="3" Name="Button3" Grid.Row="2" Grid.Column="6" Grid.RowSpan="3" Grid.ColumnSpan="3" Click="Button_Click" FontSize="50" Width="180" Height="140" Background="Black" Foreground="White" CornerRadius="16" Margin="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Button Content="+" Name="ButtonPlus" Grid.Row="2" Grid.Column="9" Grid.RowSpan="3" Grid.ColumnSpan="3" Click="Button_Click" FontSize="50" Width="180" Height="140" Background="#FFFF9500" Foreground="White" CornerRadius="16" Margin="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Button Content="4" Name="Button4" Grid.Row="5" Grid.Column="0" Grid.RowSpan="3" Grid.ColumnSpan="3" Click="Button_Click" FontSize="50" Width="180" Height="140" Background="Black" Foreground="White" CornerRadius="16" Margin="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Button Content="5" Name="Button5" Grid.Row="5" Grid.Column="3" Grid.RowSpan="3" Grid.ColumnSpan="3" Click="Button_Click" FontSize="50" Width="180" Height="140" Background="Black" Foreground="White" CornerRadius="16" Margin="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Button Content="6" Name="Button6" Grid.Row="5" Grid.Column="6" Grid.RowSpan="3" Grid.ColumnSpan="3" Click="Button_Click" FontSize="50" Width="180" Height="140" Background="Black" Foreground="White" CornerRadius="16" Margin="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Button Content="-" Grid.Row="5" Grid.Column="9" Grid.RowSpan="3" Grid.ColumnSpan="3" Click="Button_Click" FontSize="50" Width="180" Height="140" Background="#FFFF9500" Foreground="White" CornerRadius="16" Margin="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Button Content="7" Name="Button7" Grid.Row="8" Grid.Column="0" Grid.RowSpan="3" Grid.ColumnSpan="3" Click="Button_Click" FontSize="50" Width="180" Height="140" Background="Black" Foreground="White" CornerRadius="16" Margin="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Button Content="8" Name="Button8" Grid.Row="8" Grid.Column="3" Grid.RowSpan="3" Grid.ColumnSpan="3" Click="Button_Click" FontSize="50" Width="180" Height="140" Background="Black" Foreground="White" CornerRadius="16" Margin="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Button Content="9" Name="Button9" Grid.Row="8" Grid.Column="6" Grid.RowSpan="3" Grid.ColumnSpan="3" Click="Button_Click" FontSize="50" Width="180" Height="140" Background="Black" Foreground="White" CornerRadius="16" Margin="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Button Content="*" Grid.Row="8" Grid.Column="9" Grid.RowSpan="3" Grid.ColumnSpan="3" Click="Button_Click" FontSize="50" Width="180" Height="140" Background="#FFFF9500" Foreground="White" CornerRadius="16" Margin="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Button Content="0" Grid.Row="11" Grid.Column="3" Grid.RowSpan="3" Grid.ColumnSpan="3" Click="Button_Click" FontSize="50" Width="180" Height="140" Background="Black" Foreground="White" CornerRadius="16" Margin="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Button Content="." x:Name="ButtonDot" Grid.Row="5" Grid.Column="12" Grid.RowSpan="3" Grid.ColumnSpan="3" Click="Button_Click" FontSize="50" Width="180" Height="140" Background="#FFFF9500" Foreground="White" CornerRadius="16" Margin="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Button Content="=" x:Name="ButtonEquals" Grid.Row="8" Grid.Column="12" Grid.RowSpan="3" Grid.ColumnSpan="3" Click="Button_Click" FontSize="50" Width="180" Height="140" Background="#FFFF9500" Foreground="White" CornerRadius="16" Margin="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Button Content="Delete" Name="ButtonDelete" Grid.Row="11" Grid.Column="9" Grid.RowSpan="3" Grid.ColumnSpan="3" Click="Button_Click" FontSize="50" Width="180" Height="140" Background="#FFFF9500" Foreground="White" CornerRadius="16" Margin="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Button Content="/" Name="ButtonDivide" Grid.Row="11" Grid.Column="12" Grid.RowSpan="3" Grid.ColumnSpan="3" Click="Button_Click" FontSize="50" Width="180" Height="140" Background="#FFFF9500" Foreground="White" CornerRadius="16" Margin="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Button Content="Special" Grid.Row="2" Grid.Column="12" Grid.RowSpan="3" Grid.ColumnSpan="3" Click="Button_Click" FontSize="50" Width="180" Height="140" Background="#FFFF9500" Foreground="White" CornerRadius="16" Margin="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Grid Background="Black" Grid.Row="2" Grid.Column="16" Grid.RowSpan="11" Grid.ColumnSpan="5" Margin="30">
+            <TextBlock x:Name="calcoutput" Grid.Row="2" Grid.Column="16" Grid.RowSpan="4" Grid.ColumnSpan="10" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         </Grid>
-        
     </Grid>
 </Page>
